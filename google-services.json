@@ -1,27 +1,27 @@
 {
   "project_info": {
-    "project_number": "408051391192",
-    "firebase_url": "https://phonegap-push-notificati-b5609.firebaseio.com",
-    "project_id": "phonegap-push-notificati-b5609",
-    "storage_bucket": "phonegap-push-notificati-b5609.appspot.com"
+    "project_number": "345544922563",
+    "firebase_url": "https://vishal-pet-app.firebaseio.com",
+    "project_id": "vishal-pet-app",
+    "storage_bucket": "vishal-pet-app.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:408051391192:android:ed142f1261603b31",
+        "mobilesdk_app_id": "1:345544922563:android:be71c3ee918c7598",
         "android_client_info": {
-          "package_name": "com.anasmirza.pg_notification"
+          "package_name": "com.huzaifrangila.pettato"
         }
       },
       "oauth_client": [
         {
-          "client_id": "408051391192-mvstsm3ddnbj3ab9k7e16u82olad8pif.apps.googleusercontent.com",
+          "client_id": "345544922563-jr27f0oh7ulote3bb9qh71fol720g94l.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDR4t83BRJaon3v29mERsldIfuSlTtBCsE"
+          "current_key": "AIzaSyAdCfcHmdnCoOjizv7bS6L5wf0t4LSFI0w"
         }
       ],
       "services": {
