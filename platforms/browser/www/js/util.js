@@ -5,7 +5,7 @@ function onDeviceReady() {
 
     var push = PushNotification.init({
         "android": {
-            "senderID": "836033005549"
+            "senderID": "408051391192"
         },
         "browser": {},
         "ios": {
@@ -2610,7 +2610,7 @@ function loadBecomeParentFilteredContent(user_id) {
         dataType: 'json',
         crossDomain: true,
         data: {
-            user_id: user_id, 
+            user_id: user_id,
             pettype: find_parent_filter_pettype,
             breed: find_parent_filter_breed,
             age: find_parent_filter_age,
@@ -3381,7 +3381,7 @@ function loadChatMessages(user_id) {
     myApp.showIndicator();
 
     $(".chat_reviever_id").html(user_id);
-    
+
     $.ajax({
         url: base_url+'load_chat_messages',
         type: 'POST',
@@ -3415,7 +3415,7 @@ function loadChatMessages(user_id) {
                 } else {
                     additional_content = '';
                 }
- 
+
                 if (value.sender_id == token.id) {
 
                     if (value.image) {
@@ -3485,7 +3485,7 @@ function loadChatMessages(user_id) {
                 scrollMessages: true,
             });
         }
-        
+
         myApp.hideIndicator();
     }).error(function(res){
         myApp.hideIndicator();
@@ -3633,13 +3633,13 @@ function load_edit_profile_pet(user_id) {
 
             load_breed_dropdown(user_data.type_of_pet, "#edit_pet_register-breed", function(){ $("#edit_pet_register-breed").val(user_data.breed); });
 
-            $('input[name=edit_profile_pet-gender][value='+user_data.gender+']').attr('checked', true); 
+            $('input[name=edit_profile_pet-gender][value='+user_data.gender+']').attr('checked', true);
 
             profile_image_link = user_data.profile_image;
             profile_cover_image_link = user_data.cover_pic;
         } else {
             myApp.alert('Some error occurred');
-        }        
+        }
     }).fail(function(err) {
         myApp.hideIndicator();
         myApp.alert('Some error occurred');
@@ -3778,13 +3778,13 @@ function load_edit_profile_shopper() {
             $('#edit_profile_shopper-email').val(user_data.email);
             $('#edit_profile_shopper-phone').val(user_data.phone);
 
-            $('input[name=edit_profile_shopper-gender][value='+user_data.gender+']').attr('checked', true); 
+            $('input[name=edit_profile_shopper-gender][value='+user_data.gender+']').attr('checked', true);
 
             profile_image_link = user_data.profile_image;
             profile_cover_image_link = user_data.cover_pic;
         } else {
             myApp.alert('Some error occurred');
-        }        
+        }
     }).fail(function(err) {
         myApp.hideIndicator();
         myApp.alert('Some error occurred');
@@ -3842,7 +3842,7 @@ function load_edit_profile_business(user_id) {
 
             // initialize(user_data.lat, user_data.lng, 'edit_mapCanvas');
 
-            // $('input[name=edit_profile_business-gender][value='+user_data.gender+']').attr('checked', true); 
+            // $('input[name=edit_profile_business-gender][value='+user_data.gender+']').attr('checked', true);
 
             profile_image_link = user_data.profile_image;
             profile_cover_image_link = user_data.cover_pic;
@@ -4250,7 +4250,7 @@ function remove_lostfound() {
     });
 }
 
-function delete_saved(feed_id) { 
+function delete_saved(feed_id) {
     myApp.prompt('This will erase the feed from your saved list, Do you realy want to delete?', function (value) {
         $.ajax({
             url: base_url+'remove_saved_data',
@@ -4277,7 +4277,7 @@ function delete_saved(feed_id) {
 
 }
 
-function delete_feed(feed_id) { 
+function delete_feed(feed_id) {
     myApp.prompt('This will erase the feed from your profile, Do you realy want to delete?', function (value) {
         $.ajax({
             url: base_url+'remove_feed_id',
@@ -4348,8 +4348,8 @@ function shareContent() {
             share_user_id: $("#share_with_freinds-freinds").val(),
             sharing_image: sharing_image,
             sharing_content: encodeURI(sharing_content),
-            sharing_id: sharing_id, 
-            sharing_type: sharing_type, 
+            sharing_id: sharing_id,
+            sharing_type: sharing_type,
         }
     }).done(function(res){
         if (res.status == 'Success') {
@@ -4481,7 +4481,7 @@ function forgot_password() {
         url: base_url+ 'update_password',
         type: 'POST',
         crossDomain: true,
-        data: { 
+        data: {
             email: $("#forgot_password-email").val(),
             password: $("#forgot_password-password").val(),
         },

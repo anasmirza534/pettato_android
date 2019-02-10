@@ -1,27 +1,27 @@
 {
   "project_info": {
-    "project_number": "408051391192",
-    "firebase_url": "https://phonegap-push-notificati-b5609.firebaseio.com",
-    "project_id": "phonegap-push-notificati-b5609",
-    "storage_bucket": "phonegap-push-notificati-b5609.appspot.com"
+    "project_number": "836033005549",
+    "firebase_url": "https://pettato-f2308.firebaseio.com",
+    "project_id": "pettato-f2308",
+    "storage_bucket": "pettato-f2308.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:408051391192:android:ed142f1261603b31",
+        "mobilesdk_app_id": "1:836033005549:android:be71c3ee918c7598",
         "android_client_info": {
-          "package_name": "com.anasmirza.pg_notification"
+          "package_name": "com.huzaifrangila.pettato"
         }
       },
       "oauth_client": [
         {
-          "client_id": "408051391192-mvstsm3ddnbj3ab9k7e16u82olad8pif.apps.googleusercontent.com",
+          "client_id": "836033005549-3u2vtstme0bnd9mlbl7brnj4ttnfqeov.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDR4t83BRJaon3v29mERsldIfuSlTtBCsE"
+          "current_key": "AIzaSyBWocuwiYv_cYb_0lmaPogP85b1hdTjjHY"
         }
       ],
       "services": {
