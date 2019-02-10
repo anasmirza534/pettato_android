@@ -23,11 +23,12 @@ function onDeviceReady() {
             // Save new registration ID
             // localStorage.setItem('registrationId', data.registrationId);
             // Post registrationId to your app server as the value has changed
+            myApp.alert("push success = " + data.registrationId);
         }
     });
 
     push.on('error', function(e) {
-        // myApp.alert("push error = " + e.message);
+        myApp.alert("push error = " + e.message);
     });
 
     push.on('notification', function(data) {
