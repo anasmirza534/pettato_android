@@ -27,7 +27,7 @@ function onDeviceReady() {
             myApp.alert("push success = " + data.registrationId);
         }
 
-        push.hasPermission(function(data) {
+        PushNotification.hasPermission(function(data) {
             if (data.isEnabled) {
                 myApp.alert('isEnabled');
             } else {
