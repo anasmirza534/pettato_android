@@ -5,7 +5,8 @@ function onDeviceReady() {
 
     var push = PushNotification.init({
         "android": {
-            "senderID": "345544922563"
+            "senderID": "345544922563",
+            "forceShow": true
         },
         "browser": {},
         "ios": {
@@ -25,6 +26,14 @@ function onDeviceReady() {
             // Post registrationId to your app server as the value has changed
             myApp.alert("push success = " + data.registrationId);
         }
+
+        push.hasPermission(function(data) {
+            if (data.isEnabled) {
+                myApp.alert('isEnabled');
+            } else {
+                myApp.alert('isNotEnabled');
+            }
+        });
     });
 
     push.on('error', function(e) {
